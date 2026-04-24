@@ -10,63 +10,69 @@
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar">
-    <ul class="nav">
-        <li><a href="#home" class="current">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skill Set</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
+<nav class="navbar navbar-default bs-dos-nav navbar-fixed-top sticky-navigation" style="opacity: 1; top: 0px;" role="navigation">
+  <div class="container">
+
+    <!-- LEFT SIDE (Logo) -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#home">My Portfolio</a>
+    </div>
+
+    <!-- RIGHT SIDE (Menu) -->
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#home" class="current">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
+
+  </div>
 </nav>
 
+
 <!-- SECTIONS -->
-<section id="home">
+<!--            HOME-->
+<section id="home" class="templatemo-home">
+
     <div class="container">
-        <h1>Hi , I Am Ashfaak</h1>
-        <h2>BTech CSE @ NIT Jalandhar</h2>
-         <p>Data Science Enthusiast | Problem Solver | DSA</p>
+        <div class="row">
+            <div class="col-md-2 col-sm-1"></div>
+            <div class="col-md-8 col-sm-10">
+                <h1 class="tm-home-title">
+                    <strong>Ashfaak Aalam</strong>
+                </h1>
+                <h2 class="tm-home-subtitle">Data Scientist(Aspiring)</h2>
+            <p>  I’m an aspiring data scientist with a strong foundation in <strong>Python</strong>,
+                <strong>Data Analysis</strong>, and <strong>Machine Learning</strong>. I’ve worked with
+                libraries like <strong>Pandas</strong>, <strong>NumPy</strong>, and <strong>Scikit-learn </strong>to
+                explore datasets and build predictive models.
+               </p>
 
-        <a href="#projects" class="btn">View My Work</a>
-        <a href="YOUR_RESUME_LINK" class="btn">Download Resume</a>
+            <a href="#work" class="btn btn-default smoothScroll tm-view-more-btn">Let's Begin</a>
+            </div>
+            <div class="col-md-2 col-sm-1"></div>
+
+        </div>
     </div>
 </section>
-<section id="about">
-     <div class="container">
-        <h2>About Me</h2>
 
-        <p>
-            I'm a Computer Science undergraduate at NIT Jalandhar with a strong
-            interest in Data Science and problem solving.
-        </p>
-
-        <p>
-            I enjoy working with Python, building machine learning models,
-            and solving algorithmic problems using C++.
-        </p>
-
-        <p>
-            I’ve participated in HackMol 6.0 where I worked on "Stray Saver",
-            a project aimed at helping stray animals through technology.
-        </p>
-    </div>
-</section>
+<!--        SKILLS SECTION-->
 <section id="skills">
     <div class="container">
-        <h2>Skills</h2>
+        <h2 style="color:black">Skills:</h2>
 
-        <h4>Programming</h4>
+        <h4 style="color:black">Programming</h4>
         <p>Python, C++, SQL</p>
 
-        <h4>Data Science</h4>
+        <h4 style="color:black">Data Science</h4>
         <p>Pandas, NumPy, Scikit-learn</p>
 
-        <h4>Core Concepts</h4>
-        <p>Data Structures & Algorithms, OOP, Problem Solving</p>
+        <h4 style="color:black">Core Concepts</h4>
+        <p>Data Structures & Algorithms, Object Oriented Programming</p>
 
-        <h4>Tools</h4>
-        <p>Git, Jupyter Notebook</p>
+        <h4 style="color:black">Tools</h4>
+        <p>GitHub, Jupyter Notebook, PyCharm</p>
     </div>
 </section>
 <section id="projects">
@@ -100,7 +106,7 @@
 
         <div class="col-md-4 col-sm-6">
             <div class="portfolio-item">
-                <img src="{{ url_for('static', filename='images/project1.jpg') }}" class="img-responsive">
+                <img src="{{ url_for('static', filename='images/portfolio-img1.jpg') }}" class="img-responsive">
                 <div class="overlay">
                     <h4>Stray Saver</h4>
                 </div>
